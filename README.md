@@ -1,6 +1,6 @@
 # ArushSatasiaVSDIAT Terminal All Days
 
-Getting to the point at which we can run "run_synthesis":
+# Day 1 - getting to run_synthesis
 
 ./flow.tcl -interactive
 package require openlane
