@@ -1,4 +1,5 @@
-# ArushSatasiaVSDIAT
+# ArushSatasiaVSDIAT Terminal
+
 Getting to the point at which we can run "run_synthesis":
 
 ./flow.tcl -interactive
