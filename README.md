@@ -1,4 +1,4 @@
-# ArushSatasiaVSDIAT Terminal
+# ArushSatasiaVSDIAT Terminal All Days
 
 Getting to the point at which we can run "run_synthesis":
 
