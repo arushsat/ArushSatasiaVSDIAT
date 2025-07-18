@@ -12,7 +12,7 @@ run_synthesis
 
 
 
-Floor planning aka Day 2:
+# Floor planning aka Day 2:
 (My VM quit running so I only have commands for this day)
 
 Run this after running run_floorplan
