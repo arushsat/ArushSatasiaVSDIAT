@@ -31,7 +31,10 @@ run_synthesis
 
 run_floorplan
 
-new OPENLANE LAUNCHER terminal:
+
+
+stay there and run (magic -T $env(PDK_ROOT)/$env(PDK)/libs.tech/magic/$env(PDK).tech lef read $env(RUN_DIR)/tmp/merged.nom.lef def read $env(RUN_DIR)/results/floorplan/picorv32.def &
+) or open new OPENLANE LAUNCHER terminal:
 
 cd designs/ci/picorv32a/runs/RUN_2025.07.20_21.02.52/results/floorplan
 
@@ -52,5 +55,32 @@ magic -T $env(PDK_ROOT)/$env(PDK)/libs.tech/magic/$env(PDK).tech lef read $env(R
 This is what you should see:
 
 <img width="1278" height="660" alt="Screenshot 2025-07-20 at 4 58 14 PM" src="https://github.com/user-attachments/assets/53ebdb71-df7f-4d65-abad-e6498e18c5fc" />
+
+
+# Day 3
+
+## Making changes in the openlane flow
+heres an example of how to change the pin configurations. Currently the pins are equidistant.
+
+open new normal terminal:
+cd Desktop/work/tools/openlane_working_dir/openlane/configuration
+less floorplan.tcl
+<img width="847" height="580" alt="Screenshot 2025-07-20 at 5 42 58 PM" src="https://github.com/user-attachments/assets/6050bbdd-fcf0-4fa3-a537-b9bd697c0c0b" />
+
+Now we will choose which variable we want to change, so in this case it is ::env(FP_IO_MODE) for the pin configuration.
+
+so now that we have the variable, we go to the terminal where we ran run_floorplan.
+
+paste and run:
+
+set ::env(FP_IO_MODE) 2
+
+then we will have to run_floorplan again, and run the same magic command as above to view it in magic. 
+
+we will then see that the pins are no longer equidistant and they are stacked:
+
+<img width="970" height="636" alt="Screenshot 2025-07-20 at 5 48 55 PM" src="https://github.com/user-attachments/assets/e773498a-ee90-400c-a95d-dc2f23cea01f" />
+
+
 
 
