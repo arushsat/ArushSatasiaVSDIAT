@@ -2,7 +2,7 @@
 
 # Day 1 - getting to run_synthesis
 
-new terminal- add patches-
+open new regular terminal (add patches):
 
 bash <(curl -s https://raw.githubusercontent.com/ZimengXiong/bASICs-openlane-apple-silicon-vm/refs/heads/main/patch-2/patch-2.sh)
 
