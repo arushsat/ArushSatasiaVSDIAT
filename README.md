@@ -10,8 +10,11 @@ bash <(curl -s https://raw.githubusercontent.com/ZimengXiong/bASICs-openlane-app
 go to openalane launcher terminal -
 
 ./flow.tcl -interactive
+
 package require openlane
+
 prep -design designs/ci/picorv32a
+
 run_synthesis
 
 
