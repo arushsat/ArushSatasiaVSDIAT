@@ -81,6 +81,23 @@ we will then see that the pins are no longer equidistant and they are stacked:
 
 <img width="970" height="636" alt="Screenshot 2025-07-20 at 5 48 55 PM" src="https://github.com/user-attachments/assets/e773498a-ee90-400c-a95d-dc2f23cea01f" />
 
+## Getting and viewing standard cell design
+
+open new terminal
+
+cd Desktop/work/tools/openlane_working_dir/openlane
+
+git clone https://github.com/nickson-jose/vsdstdcelldesign.git
+
+open a launcher:
+
+cd vsdstdcelldesign
+
+magic -T sky130A.tech sky130_inv.mag &
+
+You should see this:
+
+<img width="1276" height="731" alt="Screenshot 2025-07-20 at 7 53 19 PM" src="https://github.com/user-attachments/assets/4d9b82d5-6d3f-46a9-bccb-bc632f50a31a" />
 
 
 
